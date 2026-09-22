@@ -43,6 +43,8 @@ CodeAlpha-SocialMedia
     ├── server.js
     ├── package.json
     └── package-lock.json
+```
+
 ## How to Run
 
 1. Install Node.js.
@@ -52,14 +54,20 @@ CodeAlpha-SocialMedia
 
 ```bash
 cd backend
+```
+
 5. Install dependencies:
 
 ```bash
 npm install
+```
+
 6. Start the backend server:
 
 ```bash
 node server.js
+```
+
 7. Open the website in your browser.
 
 ## Internship Task
