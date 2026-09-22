@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ConnectHub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#create-post">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Login Section -->
+        <section class="login-section">
+            <h2>Login</h2>
+
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+
+            <p>Don't have an account?</p>
+
+            <button onclick="signup()">Sign Up</button>
+
+            <p id="loginMessage"></p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section">
+            <h2>My Profile</h2>
+
+            <p><strong id="profileName">Vasavi</strong></p>
+            <p>Data Science Student</p>
+
+            <button onclick="editProfile()">Edit Profile</button>
+
+            <div class="follow-info">
+                <span>Followers: <strong id="followersCount">0</strong></span>
+                <span>Following: <strong id="followingCount">0</strong></span>
+            </div>
+
+            <button onclick="followUser()">Follow</button>
+        </section>
+
+        <!-- Create Post -->
+        <section id="create-post" class="create-post">
+            <h2>Create Post</h2>
+
+            <textarea
+                id="postText"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button onclick="createPost()">Post</button>
+        </section>
+
+        <!-- Posts -->
+        <section id="home" class="posts-section">
+            <h2>Posts</h2>
+
+            <div id="postContainer"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
